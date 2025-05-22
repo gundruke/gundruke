@@ -1,0 +1,136 @@
+/* Basic Reset & Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+}
+
+header a, footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #4CAF50; /* Green accent for headings */
+  padding-bottom: 0.3em;
+  margin-top: 0; /* Adjust if header already has margin */
+}
+
+h3 {
+  color: #555;
+  margin-top: 1.5em;
+}
+
+h4 {
+  color: #666;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+/* Profile Header on Index Page */
+.profile-header {
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: #e9ecef; /* Light grey background */
+  border-radius: 5px;
+}
+
+.profile-header h1 {
+  margin-bottom: 0.2em;
+  color: #333;
+}
+
+.profile-header p {
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
+/* Experience and Education Article Styling */
+.job, .education-entry, .publication-entry, .honor-entry {
+  margin-bottom: 1.5em;
+}
+
+.job strong, .education-entry strong {
+  font-weight: bold;
+}
+
+.job em, .education-entry em, .publication-entry em, .honor-entry em {
+  color: #777;
+  font-style: italic;
+}
+
+.job div, .education-entry div, .honor-entry div { /* For descriptions */
+  margin-top: 0.5em;
+  padding-left: 1em;
+  border-left: 3px solid #eee;
+}
+
+/* Skills List */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: inline-block;
+  background-color: #4CAF50; /* Green background for skills */
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Utility */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 2em 0;
+}
+
+/* Ensure the main content is wrapped in a container for centering and padding */
+/* This might require adjusting _layouts/default.html to wrap {{ content }} */
+/* For now, this CSS assumes a .container class might be used on <main> or a div inside it */

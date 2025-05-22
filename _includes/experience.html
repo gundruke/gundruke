@@ -1,0 +1,21 @@
+<section id="experience">
+  <h2>Experience</h2>
+  {% if site.data.linkedin_profile.experience and site.data.linkedin_profile.experience.size > 0 %}
+    {% for job in site.data.linkedin_profile.experience %}
+      <article class="job">
+        <h3>{{ job.title | escape }}</h3>
+        <p><strong>{{ job.company | escape }}</strong>{% if job.type %} - {{ job.type | escape }}{% endif %}</p>
+        <p><em>{% if job.duration %}{{ job.duration | escape }}{% endif %}{% if job.location %} | {{ job.location | escape }}{% endif %}</em></p>
+        {% if job.description and job.description != "" %}
+          <div>{{ job.description | newline_to_br }}</div>
+        {% endif %}
+        {% if job.skills_mentioned and job.skills_mentioned != "" %}
+          <p><strong>Skills:</strong> {{ job.skills_mentioned | escape }}</p>
+        {% endif %}
+      </article>
+      {% unless forloop.last %}<hr>{% endunless %}
+    {% endfor %}
+  {% else %}
+    <p>No professional experience listed.</p>
+  {% endif %}
+</section>

@@ -1,0 +1,8 @@
+<section id="about">
+  <h2>About Me</h2>
+  {% if site.data.linkedin_profile.about %}
+    <p>{{ site.data.linkedin_profile.about | newline_to_br }}</p>
+  {% else %}
+    <p>About section not yet available.</p>
+  {% endif %}
+</section>

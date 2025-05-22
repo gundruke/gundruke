@@ -1,0 +1,18 @@
+{% if site.data.linkedin_profile.honors_and_awards and site.data.linkedin_profile.honors_and_awards.size > 0 %}
+<section id="honors-awards">
+  <h2>Honors & Awards</h2>
+  {% for honor in site.data.linkedin_profile.honors_and_awards %}
+    <article class="honor-entry">
+      <h4>{{ honor.title | escape }}</h4>
+      <p><em>{% if honor.issuer %}{{ honor.issuer | escape }}{% endif %}{% if honor.date %} - {{ honor.date | escape }}{% endif %}</em></p>
+      {% if honor.associated_with %}
+        <p>Associated with: {{ honor.associated_with | escape }}</p>
+      {% endif %}
+      {% if honor.description %}
+        <div>{{ honor.description | newline_to_br }}</div>
+      {% endif %}
+    </article>
+    {% unless forloop.last %}<hr style="border-top: 1px solid #eee;">{% endunless %}
+  {% endfor %}
+</section>
+{% endif %}

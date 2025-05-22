@@ -1,0 +1,122 @@
+name: Roshan Poudel
+pronouns: He/Him
+title: AI Engineer at Infomedia
+current_education_institution: Universidade de Aveiro # As per text structure, this seems to be the last attended for degree
+location: Copenhagen, Capital Region of Denmark, Denmark
+contact_info: www.linkedin.com/in/pdlroshan
+connections: 243
+
+about: |
+  Currently working at Infomedia as AI Engineer. Highly passionate about Data Science and Software Engineering. Over the years I have been working in different research projects and fellowships, taking roles of Software Developer, Data Science researcher and ML engineer.
+
+top_skills:
+  - Python (Programming Language)
+  - Machine Learning
+  - Natural Language Processing (NLP)
+  - Research Skills
+  - Containerization
+
+experience:
+  - title: AI Engineer
+    company: Infomedia
+    type: Full-time
+    duration: Jan 2024 - Present · 1 yr 5 mos
+    location: Copenhagen, Capital Region of Denmark, Denmark · On-site
+    description: "" # No specific description provided for this role in the text
+
+  - title: Research Fellowship - ML Researcher
+    company: CeDRI / IEETA
+    type: Apprenticeship
+    duration: Oct 2021 - Jul 2023 · 1 yr 10 mos
+    location: Bragança, Portugal / Aveiro, Portugal
+    description: |
+      Worked as part of research team for PandIA – Management of Pandemic Social Isolation Based on City and Social Intelligence
+      • Mainly responsible for configuring servers and backend of ML systems ranging from API deployment to ELK stack
+      • Researched several methodologies relating with NLP and over time analysis of tweets
+      • Used twitter API with tweepy to collect Portuguese tweets from COVID duration
+      • ELK (Elasticsearch Logstash Kibana) Infrastructure to store and analyze tweets
+      • Analyzed the tweets and published papers based on the dataset
+      • Worked on development of a annotation dashboard using Django
+    skills_mentioned: Python (Programming Language), Artificial Intelligence (AI) and +7 skills
+
+  - title: Fellowship - Software Development
+    company: Research Centre in Digitalization and Intelligent Robotics (CeDRI)
+    type: Apprenticeship
+    duration: Mar 2021 - Jun 2021 · 4 mos
+    location: Bragança, Portugal · On-site
+    description: |
+      Automatic pill dispenser for elderly with integrated wrist band for reminders. Funded by Fundação La Caixa.
+      • Mainly responsible revamping the code base to follow observer pattern
+      • Worked on creating a communication between ESP32, Arduino and various sensors and actuators
+      that were a part of self pill dispensing device
+      • Studied and explored software development with observer pattern in depth
+    skills_mentioned: C (Programming Language), Observer Pattern and +3 skills
+
+  - title: Student Assistant
+    company: Research Centre in Digitalization and Intelligent Robotics (CeDRI)
+    type: Apprenticeship
+    duration: Jul 2020 - Oct 2020 · 4 mos
+    location: Bragança, Portugal · On-site
+    description: |
+      • Helped in development of a math learning platform that was funded by EU
+      • Created questions and exam sets related to calculus and set theory for the platform
+      • Added several online learning resources to the platform
+      • Created new mathematical videos and pdfs on several mathematical topics
+    skills_mentioned: Calculus, Linear Algebra and +3 skills
+
+education:
+  - institution: Universidade de Aveiro
+    degree: Master's degree, Data Science
+    duration: Oct 2021 - Jun 2023
+    grade: 17
+    details: |
+      • Mainly focused on following subjects :
+       – Foundations of Data Science
+       – Mathematical Tools for Big Data
+       – Foundations of Machine Learning
+       – Advanced Algorithms
+       – Complements of Machine Learning
+       – Mining Large Scale Datasets
+      • Explored Machine learning packages like Numpy, Pandas, Scikit learn, matplolib and Pytorch
+      • Tools like Docker, Git and Pyspark were used throughout the course
+      • Topics related multivariate statistics and its applications
+      • Dissertation : Exploring Transformers for Aspect Based Sentiment Analysis
+    skills_mentioned: Programming, Natural Language Processing (NLP) and +4 skills
+
+  - institution: Instituto Politécnico de Bragança
+    degree: Informatics Engineering, Computer Science
+    duration: 2018 - 2021
+    grade: 18
+    activities_and_societies: |
+      • Explored principals of Programming and Software engineering with languages like C, C++, Java and Python
+      • Concepts of AI/ML and API deployment
+      • Brief knowledge about System Administration, Computer Networks and Cybersecurity
+      • Dissertation : Using NLP for Phishing Detection
+    skills_mentioned: Programming and Natural Language Processing (NLP)
+
+publications:
+  - title: BIT.UA at MedProcNer: Discovering Medical Procedures in Spanish Using Transformer Models with MCRF and Augmentation
+    source: BioASQ 11B, BioASQ
+    date: Oct 1, 2023
+  - title: BIT.UA at BioASQ 11B: Two-Stage IR with Synthetic Training and Zero-Shot Answer Generation
+    source: MedProcNER, BioASQ # Text says "MedProcNER, BioASQ" - assuming MedProcNER is the specific track/workshop and BioASQ the main event/publisher
+    date: Oct 1, 2023
+  # Text mentions "Show all 4 publications", implying two more are not detailed.
+
+honors_and_awards:
+  - title: Aveiro Tech City Hackathon (Winner)
+    issuer: Aveiro Municipality & Ubiwhere
+    date: Oct 2022
+    associated_with: Universidade de Aveiro
+    description: |
+      - Mainly responsible for establishing ML and Thingsboard infrastructure, 
+      - IoT end to end platform for crisis reporting and management, 
+      - Follows concepts of Data sovereignty and Multi tenancy
+  - title: Inncyber Innovation Hub (Finalist)
+    issuer: PremiValor Consulting
+    date: Sep 2021
+    associated_with: Instituto Politécnico de Bragança
+    description: |
+      - Phishing detection using on screen visuals, 
+      - Customizable YOLO object detection model pipeline
+  # Text mentions "Show all 3 honors & awards", implying one more is not detailed.

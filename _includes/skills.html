@@ -1,0 +1,12 @@
+<section id="skills">
+  <h2>Top Skills</h2>
+  {% if site.data.linkedin_profile.top_skills and site.data.linkedin_profile.top_skills.size > 0 %}
+    <ul class="skills-list">
+      {% for skill in site.data.linkedin_profile.top_skills %}
+        <li>{{ skill | escape }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No skills listed yet.</p>
+  {% endif %}
+</section>

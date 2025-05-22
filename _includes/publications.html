@@ -1,0 +1,15 @@
+{% if site.data.linkedin_profile.publications and site.data.linkedin_profile.publications.size > 0 %}
+<section id="publications">
+  <h2>Publications</h2>
+  {% for pub in site.data.linkedin_profile.publications %}
+    <article class="publication-entry">
+      <h4>{{ pub.title | escape }}</h4>
+      <p><em>{% if pub.source %}{{ pub.source | escape }}{% endif %}{% if pub.date %} - {{ pub.date | escape }}{% endif %}</em></p>
+      {% if pub.url %} <!-- Assuming a 'url' field might be added to YAML later -->
+        <p><a href="{{ pub.url | escape }}" target="_blank" rel="noopener noreferrer">Show publication</a></p>
+      {% endif %}
+    </article>
+    {% unless forloop.last %}<hr style="border-top: 1px solid #eee;">{% endunless %}
+  {% endfor %}
+</section>
+{% endif %}
