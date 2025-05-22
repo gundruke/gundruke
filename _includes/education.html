@@ -1,0 +1,29 @@
+<section id="education">
+  <h2>Education</h2>
+  {% if site.data.linkedin_profile.education and site.data.linkedin_profile.education.size > 0 %}
+    {% for edu in site.data.linkedin_profile.education %}
+      <article class="education-entry">
+        <h3>{{ edu.institution | escape }}</h3>
+        <p><strong>{{ edu.degree | escape }}</strong></p>
+        {% if edu.duration %}
+          <p><em>{{ edu.duration | escape }}</em></p>
+        {% endif %}
+        {% if edu.grade %}
+          <p>Grade: {{ edu.grade | escape }}</p>
+        {% endif %}
+        {% if edu.details %}
+          <div>{{ edu.details | newline_to_br }}</div>
+        {% endif %}
+        {% if edu.activities_and_societies %}
+          <div><strong>Activities and Societies:</strong><br>{{ edu.activities_and_societies | newline_to_br }}</div>
+        {% endif %}
+        {% if edu.skills_mentioned %}
+          <p><strong>Skills:</strong> {{ edu.skills_mentioned | escape }}</p>
+        {% endif %}
+      </article>
+      {% unless forloop.last %}<hr>{% endunless %}
+    {% endfor %}
+  {% else %}
+    <p>No educational background listed.</p>
+  {% endif %}
+</section>
